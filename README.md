@@ -12,3 +12,7 @@ This project implements a high-performance beat tracking system using MERT seman
 ## Installation
 ```bash
 pip install torch transformers librosa numpy madmom tqdm pandas mirdata
+
+python train2.py
+
+python generate_prediction_json_new.py
