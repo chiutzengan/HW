@@ -22,7 +22,7 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 下載完成後，請將檔案解壓縮。目錄結構如下所示：
 ```
 61447065S.zip/
-├── datasets/             # 存放音檔與標註檔 (.txt / .beats)
+├── training_datasets/             # 存放音檔與標註檔 (.txt / .beats)
 │   ├── ballroom/
 │   ├── hainsworth/
 │   └── hainsworth_augment/
@@ -37,15 +37,15 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 
 階段一：資料前處理與特徵擴增 (Augmentation & Extraction)
 
- augment_speed.py 
+ python augment_speed.py 
 
- batch_extract_mert.py  
+ python batch_extract_mert_ALL.py  
 
-  train.py 
+ python train.py 
 
-   generate_prediction_json.py 
+ python generate_prediction_json.py 
 
-   eval_json.py  
+ python eval_json.py  
 
 
 參考文獻 (References)
