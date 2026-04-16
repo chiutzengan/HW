@@ -35,7 +35,6 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 └── generate_prediction_json_mert.py  # 推論腳本
 ```
 
-階段一：資料前處理與特徵擴增 (Augmentation & Extraction)
 
  python augment_speed.py 
 
@@ -43,14 +42,13 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 
  python train.py 
 
- python generate_prediction_json.py 
+ python generate_prediction_json.py result.json
 
- python eval_json.py  
+ python eval_json.py  result.json
 
 
-參考文獻 (References)
+References
 Li, Y., Yuan, R., Zhang, G., et al. (2023). MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training. arXiv preprint arXiv:2306.00107.
 
 Böck, S., Korzeniowski, F., Schlüter, J., Krebs, F., & Widmer, G. (2016). madmom: a new Python Audio and Music Signal Processing Library. In Proceedings of the 24th ACM International Conference on Multimedia.
 
-執行推論與生成預測檔
