@@ -49,7 +49,7 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 ```
 推論與生成預測結果到`result.json`
 ```
- python generate_prediction_json.py result.json
+ python generate_prediction_json_mert.py result.json
 ```
 Evaluation 計算`result.json`分數
 ```
