@@ -1,32 +1,24 @@
 
-## 🛠️ 環境建置 (Installation)
+##  Installation
 
-請依照以下步驟進行安裝：
-
-### 1. 建立並啟動 Conda 虛擬環境與安裝依賴套件
-請打開終端機，建立一個專屬的虛擬環境，並安裝 PyTorch 與音訊處理必備套件：
-
-# 建立虛擬環境 (建議 Python 3.9 或 3.10)
+###  建立並啟動 Conda 虛擬環境與安裝依賴套件
+```
 conda create -n beat python=3.9 -y
 
-# 啟動虛擬環境
 conda activate beat
 
-# 安裝核心深度學習套件與音訊處理庫
-pip install torch torchvision torchaudio
-pip install librosa numpy pandas tqdm scipy scikit-learn
-pip install transformers mirdata
-pip install madmom
+cd 61447065S/
 
+pip install -r requirements.txt
+```
 
-資料集準備 (Dataset Preparation)
-本專案使用 Ballroom、Hainsworth (包含原始與變速增強版) 以及 HSSP 資料集進行訓練。
+### 資料集準備 (Dataset Preparation)
+使用 Ballroom、Hainsworth (包含原始與變速增強版)資料集進行訓練。
 
 1. 下載資料集與特徵壓縮包
 https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=sharing
-我已經將原始音檔與預先抽好的 MERT 特徵 (.npy) 打包成壓縮檔。請下載並放置於專案根目錄。
 
-3. 解壓縮與放置
+2. 解壓縮與放置
 下載完成後，請將檔案解壓縮。目錄結構如下所示：
 ```
 61447065S.zip/
