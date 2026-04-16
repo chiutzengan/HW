@@ -35,17 +35,26 @@ https://drive.google.com/file/d/1eKcI05qtUtcQO9Gz0YsmWWOIM6i7UVCg/view?usp=shari
 └── generate_prediction_json_mert.py  # 推論腳本
 ```
 
-
+將hainsworth資料集變速，不改變音高的情況下，將原始音檔縮放速度
+```
  python augment_speed.py 
-
+```
+特徵提取(一次處理 Ballroom、Hainsworth 及增強資料集的特徵轉換)
+```
  python batch_extract_mert_ALL.py  
-
+```
+模型微調訓練
+```
  python train.py 
-
+```
+推論與生成預測結果到`result.json`
+```
  python generate_prediction_json.py result.json
-
+```
+Evaluation 計算`result.json`分數
+```
  python eval_json.py  result.json
-
+```
 
 References
 Li, Y., Yuan, R., Zhang, G., et al. (2023). MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training. arXiv preprint arXiv:2306.00107.
